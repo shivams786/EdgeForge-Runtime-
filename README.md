@@ -130,14 +130,3 @@ ctest --test-dir build --output-on-failure
 - OpenTelemetry export and structured config parsing
 - Zero-copy input buffers and memory pool integration
 
-## Resume Bullets
-
-- Built a C++-based edge AI inference runtime that loads ONNX models, executes inference jobs, and logs latency, throughput, memory usage, and failure metrics.
-- Designed a plugin-style model-runner interface with ONNX Runtime integration, enabling future support for QNN, SNPE, TensorRT, or LiteRT backends.
-- Implemented FIFO and priority-based inference scheduling for multiple model execution tasks.
-- Added a CLI for single-model inference, batch job execution, scheduling selection, and runtime metrics reporting.
-- Integrated CMake-based builds, structured runtime logging, Python model-export tools, and unit tests for scheduler, metrics, logging, and tensor parsing.
-
-## Interview Explanation
-
-This project models the control plane around edge inference. The CLI creates one or more jobs, the scheduler determines execution order, the factory chooses a backend runner, and the ONNX runner owns model loading and inference through ONNX Runtime. Every attempt is logged as JSONL and folded into a metrics collector, so failures remain observable instead of disappearing into control flow.
