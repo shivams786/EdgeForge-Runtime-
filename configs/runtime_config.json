@@ -1,0 +1,6 @@
+{
+  "schedule": "fifo",
+  "log_path": "logs/inference_metrics.jsonl",
+  "metrics": true
+}
+

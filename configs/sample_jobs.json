@@ -1,0 +1,17 @@
+[
+  {
+    "job_id": "job_001",
+    "model_path": "models/sample_model.onnx",
+    "input_path": "sample_inputs/input_vector.txt",
+    "runner_type": "onnx",
+    "priority": 10
+  },
+  {
+    "job_id": "job_002",
+    "model_path": "models/sample_model.onnx",
+    "input_path": "sample_inputs/input_vector.txt",
+    "runner_type": "onnx",
+    "priority": 20
+  }
+]
+

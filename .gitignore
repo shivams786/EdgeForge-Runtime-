@@ -1,0 +1,16 @@
+build/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.user
+*.suo
+*.swp
+*.log
+logs/*.jsonl
+models/*.onnx
+models/*.ort
+sample_inputs/*.txt
+sample_inputs/*.csv
+sample_inputs/*.json
+
